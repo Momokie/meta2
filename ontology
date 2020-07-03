@@ -1,0 +1,1919 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/zita/ontologies/2020/3/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/zita/ontologies/2020/3/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/zita/ontologies/2020/3/untitled-ontology-2#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="wot" IRI="http://xmlns.com/wot/0.1/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="core" IRI="http://purl.org/vocab/frbr/core#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://www.w3.org/ns/prov-20130430</Import>
+    <Import>http://www.w3.org/ns/prov-o-20130430</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiasCheck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CalculateCI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CalculateTrueEffectSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChoosePaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conceptualisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConfidenceInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Criteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefineCriteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DetermineEffectSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EffectSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeterogeneityTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasureHeterogeneity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetaAnalysisPaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetaAnalysisResults"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResearchPaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrueEffectSize"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAuthorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:used"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:alternative"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:dateAccepted"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:dateCopyrighted"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:dateSubmitted"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aronoff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biederman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Browne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burrows-MacLean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CImax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CImin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CWRU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chronis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CochransQtest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Criterion1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Criterion2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Criterion3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DuvalAndTweedie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fabiano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Faraone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Findling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Forehand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gnagy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HedgesAndOlkin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meichenbaum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Midlam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nguyen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Olvera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Onyango"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paper1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paper2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paper3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paper4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pelham"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pliszka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PubMed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RandomEffectsModel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shapiro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Short"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steiner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrueES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Waxmonsky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Williams"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wynne"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <Class abbreviatedIRI="prov:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiasCheck"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateCI"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateCI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:used"/>
+            <Class IRI="#TrueEffectSize"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateCI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateCI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+            <Class IRI="#CalculateTrueEffectSize"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateTrueEffectSize"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateTrueEffectSize"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:used"/>
+            <Class IRI="#Method"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateTrueEffectSize"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateTrueEffectSize"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+            <Class IRI="#DetermineEffectSize"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CalculateTrueEffectSize"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty abbreviatedIRI="prov:used"/>
+            <Class IRI="#EffectSize"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChoosePaper"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChoosePaper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:used"/>
+            <Class IRI="#Criteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChoosePaper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChoosePaper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+            <Class IRI="#DefineCriteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conceptualisation"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conceptualisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:used"/>
+            <Class IRI="#Method"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conceptualisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:used"/>
+            <Class IRI="#Model"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conceptualisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfidenceInterval"/>
+        <Class IRI="#MetaAnalysisResults"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfidenceInterval"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#CalculateCI"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfidenceInterval"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasPart"/>
+            <NamedIndividual IRI="#CImax"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConfidenceInterval"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasPart"/>
+            <NamedIndividual IRI="#CImin"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criteria"/>
+        <Class IRI="#MetaAnalysisPaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criteria"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#DefineCriteria"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSources"/>
+        <Class IRI="#MetaAnalysisPaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefineCriteria"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefineCriteria"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetermineEffectSize"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetermineEffectSize"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:used"/>
+            <Class IRI="#ResearchPaper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetermineEffectSize"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetermineEffectSize"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+            <Class IRI="#ChoosePaper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EffectSize"/>
+        <Class IRI="#ResearchPaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EffectSize"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:hadPrimarySource"/>
+            <Class IRI="#ResearchPaper"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EffectSize"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#DetermineEffectSize"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeterogeneityTest"/>
+        <Class IRI="#MetaAnalysisPaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institute"/>
+        <Class abbreviatedIRI="prov:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasureHeterogeneity"/>
+        <Class IRI="#MetaAnalysisActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisActivity"/>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisActivity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAssociatedWith"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisPaper"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisPaper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisPaper"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#MetaAnalysisActivity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisResults"/>
+        <Class IRI="#MetaAnalysisPaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisResults"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaAnalysisResults"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#MetaAnalysisActivity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <Class IRI="#MetaAnalysisPaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#Conceptualisation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model"/>
+        <Class IRI="#MetaAnalysisPaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#Conceptualisation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchPaper"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchPaper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:hadPrimarySource"/>
+            <Class IRI="#DataSources"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResearchPaper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrueEffectSize"/>
+        <Class IRI="#MetaAnalysisResults"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrueEffectSize"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#CalculateTrueEffectSize"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrueEffectSize"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasPart"/>
+            <NamedIndividual IRI="#TrueES"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Aronoff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Aronoff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Biederman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Biederman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:hadRole"/>
+            <Class IRI="#MetaAnalysisActivity"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Biederman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="foaf:made"/>
+            <Class IRI="#MetaAnalysisPaper"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Biederman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Browne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Browne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Burrows-MacLean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Burrows-MacLean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConfidenceInterval"/>
+        <NamedIndividual IRI="#CImax"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConfidenceInterval"/>
+        <NamedIndividual IRI="#CImin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#CWRU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Chronis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Chronis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeterogeneityTest"/>
+        <NamedIndividual IRI="#CochransQtest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeasureHeterogeneity"/>
+        <NamedIndividual IRI="#CochransQtest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Criteria"/>
+        <NamedIndividual IRI="#Criterion1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#DefineCriteria"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Criterion1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Criteria"/>
+        <NamedIndividual IRI="#Criterion2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#DefineCriteria"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Criterion2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Criteria"/>
+        <NamedIndividual IRI="#Criterion3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasGeneratedBy"/>
+            <Class IRI="#DefineCriteria"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Criterion3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BiasCheck"/>
+        <NamedIndividual IRI="#DuvalAndTweedie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Fabiano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Fabiano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Faraone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Faraone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:hadRole"/>
+            <Class IRI="#MetaAnalysisActivity"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Faraone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="foaf:made"/>
+            <Class IRI="#MetaAnalysisPaper"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Faraone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Findling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Findling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="foaf:made"/>
+            <Class IRI="#ResearchPaper"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Findling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Forehand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Forehand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Gnagy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Gnagy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Conceptualisation"/>
+        <NamedIndividual IRI="#HedgesAndOlkin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Method"/>
+        <NamedIndividual IRI="#HedgesAndOlkin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Manos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Manos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="foaf:made"/>
+            <Class IRI="#ResearchPaper"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Manos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Meichenbaum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Meichenbaum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MetaAnalysisPaper"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Midlam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Midlam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Nguyen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Nguyen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Olvera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Olvera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Onyango"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Onyango"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResearchPaper"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Paper1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResearchPaper"/>
+        <NamedIndividual IRI="#Paper2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Paper2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResearchPaper"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Paper3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResearchPaper"/>
+        <NamedIndividual IRI="#Paper4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Paper4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Pelham"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pelham"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Pliszka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Pliszka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataSources"/>
+        <NamedIndividual IRI="#PubMed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CalculateCI"/>
+        <NamedIndividual IRI="#RandomEffectsModel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CalculateTrueEffectSize"/>
+        <NamedIndividual IRI="#RandomEffectsModel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Model"/>
+        <NamedIndividual IRI="#RandomEffectsModel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Roe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Roe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:hadRole"/>
+            <Class IRI="#MetaAnalysisActivity"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Roe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="foaf:made"/>
+            <Class IRI="#MetaAnalysisPaper"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Roe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Shapiro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Shapiro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Short"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Short"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="foaf:made"/>
+            <Class IRI="#ResearchPaper"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Short"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Steiner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Steiner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrueEffectSize"/>
+        <NamedIndividual IRI="#TrueES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Institute"/>
+        <NamedIndividual IRI="#UT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Waxmonsky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Waxmonsky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Williams"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Williams"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Wynne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+            <Class IRI="#Institute"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Wynne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="prov:wasInformedBy"/>
+            <Class IRI="#ChoosePaper"/>
+        </ObjectSomeValuesFrom>
+        <AnonymousIndividual nodeID="_:genid2147483795"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Aronoff"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Aronoff"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Aronoff"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Biederman"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Biederman"/>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Browne"/>
+        <NamedIndividual IRI="#Paper4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Browne"/>
+        <NamedIndividual IRI="#UT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Burrows-MacLean"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Burrows-MacLean"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#CWRU"/>
+        <NamedIndividual IRI="#Findling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#CWRU"/>
+        <NamedIndividual IRI="#Manos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#CWRU"/>
+        <NamedIndividual IRI="#Short"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Chronis"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Chronis"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Chronis"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:influenced"/>
+        <NamedIndividual IRI="#DuvalAndTweedie"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Fabiano"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Fabiano"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Faraone"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Faraone"/>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Findling"/>
+        <NamedIndividual IRI="#Paper2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Findling"/>
+        <NamedIndividual IRI="#CWRU"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Forehand"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Forehand"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Gnagy"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Gnagy"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Gnagy"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:influenced"/>
+        <NamedIndividual IRI="#HedgesAndOlkin"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Manos"/>
+        <NamedIndividual IRI="#Paper2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Manos"/>
+        <NamedIndividual IRI="#CWRU"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+        <NamedIndividual IRI="#Biederman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+        <NamedIndividual IRI="#Faraone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+        <NamedIndividual IRI="#Roe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Meichenbaum"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Meichenbaum"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPart"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+        <NamedIndividual IRI="#CImax"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPart"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+        <NamedIndividual IRI="#CImin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPart"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+        <NamedIndividual IRI="#TrueES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+        <NamedIndividual IRI="#Biederman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+        <NamedIndividual IRI="#Faraone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+        <NamedIndividual IRI="#Roe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasInfluencedBy"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+        <NamedIndividual IRI="#HedgesAndOlkin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Midlam"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Midlam"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Nguyen"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Nguyen"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Olvera"/>
+        <NamedIndividual IRI="#Paper4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Olvera"/>
+        <NamedIndividual IRI="#UT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Onyango"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Onyango"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Onyango"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadPrimarySource"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#PubMed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Aronoff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Chronis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Forehand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Gnagy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Midlam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Nguyen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Onyango"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Pelham"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Shapiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#Waxmonsky"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasInfluencedBy"/>
+        <NamedIndividual IRI="#Paper1"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadPrimarySource"/>
+        <NamedIndividual IRI="#Paper2"/>
+        <NamedIndividual IRI="#PubMed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper2"/>
+        <NamedIndividual IRI="#Findling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper2"/>
+        <NamedIndividual IRI="#Manos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper2"/>
+        <NamedIndividual IRI="#Short"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasInfluencedBy"/>
+        <NamedIndividual IRI="#Paper2"/>
+        <NamedIndividual IRI="#CWRU"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadPrimarySource"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#PubMed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Aronoff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Burrows-MacLean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Chronis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Fabiano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Gnagy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Meichenbaum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Onyango"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Pelham"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Steiner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#Williams"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasInfluencedBy"/>
+        <NamedIndividual IRI="#Paper3"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadPrimarySource"/>
+        <NamedIndividual IRI="#Paper4"/>
+        <NamedIndividual IRI="#PubMed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper4"/>
+        <NamedIndividual IRI="#Browne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper4"/>
+        <NamedIndividual IRI="#Olvera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper4"/>
+        <NamedIndividual IRI="#Pliszka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <NamedIndividual IRI="#Paper4"/>
+        <NamedIndividual IRI="#Wynne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:wasInfluencedBy"/>
+        <NamedIndividual IRI="#Paper4"/>
+        <NamedIndividual IRI="#UT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Pelham"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Pelham"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Pelham"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Pliszka"/>
+        <NamedIndividual IRI="#Paper4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Pliszka"/>
+        <NamedIndividual IRI="#UT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:influenced"/>
+        <NamedIndividual IRI="#RandomEffectsModel"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Roe"/>
+        <NamedIndividual IRI="#MetaAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Roe"/>
+        <NamedIndividual IRI="#MassachusettsGeneralHospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Aronoff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Burrows-MacLean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Chronis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Fabiano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Forehand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Gnagy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Meichenbaum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Midlam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Nguyen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Onyango"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Pelham"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Shapiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Steiner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Waxmonsky"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+        <NamedIndividual IRI="#Williams"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Shapiro"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Shapiro"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Short"/>
+        <NamedIndividual IRI="#Paper2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Short"/>
+        <NamedIndividual IRI="#CWRU"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Steiner"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Steiner"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#UT"/>
+        <NamedIndividual IRI="#Browne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#UT"/>
+        <NamedIndividual IRI="#Olvera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#UT"/>
+        <NamedIndividual IRI="#Pliszka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:hadMember"/>
+        <NamedIndividual IRI="#UT"/>
+        <NamedIndividual IRI="#Wynne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Waxmonsky"/>
+        <NamedIndividual IRI="#Paper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Waxmonsky"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <NamedIndividual IRI="#Williams"/>
+        <NamedIndividual IRI="#Paper3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Williams"/>
+        <NamedIndividual IRI="#SUNYbuffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:actedOnBehalfOf"/>
+        <NamedIndividual IRI="#Wynne"/>
+        <NamedIndividual IRI="#Paper4"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="prov:value"/>
+        <NamedIndividual IRI="#CImax"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="prov:value"/>
+        <NamedIndividual IRI="#CImin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="prov:value"/>
+        <NamedIndividual IRI="#CochransQtest"/>
+        <Literal>chi-square = 20.1,
+p = 0.33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="prov:value"/>
+        <NamedIndividual IRI="#TrueES"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.25</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <ObjectProperty IRI="#writtenBy"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasPart"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMember"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <Class abbreviatedIRI="prov:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAuthorOf"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class abbreviatedIRI="prov:Person"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:alternative"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:bibliographicCitation"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:created"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:date"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:dateAccepted"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:dateCopyrighted"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:dateSubmitted"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="terms:title"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#CWRU</IRI>
+        <Literal>Case Western Reserve University (CWRU) School of Medicine, Cleveland, OH, USA.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Criterion1</IRI>
+        <Literal>Research must make use of blinded ratings of outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Criterion2</IRI>
+        <Literal>Research must present means and standard deviations of outcome scores for Adderall and MPH groups.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#Criterion3</IRI>
+        <Literal>Research must make use of structured methods of assessment for ADHD symptoms, aggressive or defiant symptoms, or global ratings of behavior.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#DuvalAndTweedie</IRI>
+        <Literal>Trim and Fill: A Simple Funnel-Plot-Based Method of Testing and Adjusting for Publication Bias in Meta-Analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#HedgesAndOlkin</IRI>
+        <Literal>Statistical methods for meta-analysis: addressing the statistical issues for integrating independent studies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#MassachusettsGeneralHospital</IRI>
+        <Literal>Pediatric Psychopharmacology Unit of the Child Psychiatry Service, Massachusetts General Hospital, Harvard Medical School.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#title"/>
+        <IRI>#MetaAnalysis</IRI>
+        <Literal>Comparative Efficacy of Adderall and Methylphenidate in Attention-deficit/Hyperactivity Disorder: A Meta-Analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#title"/>
+        <IRI>#Paper1</IRI>
+        <Literal>A comparison of ritalin and adderall: efficacy and time-course in children with attention-deficit/hyperactivity disorder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#title"/>
+        <IRI>#Paper2</IRI>
+        <Literal>Differential effectiveness of methylphenidate and Adderall in school-age youths with attention-deficit/hyperactivity disorder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#title"/>
+        <IRI>#Paper3</IRI>
+        <Literal>A comparison of morning-only and morning/late afternoon Adderall to morning-only, twice-daily, and three times-daily methylphenidate in children with attention-deficit/hyperactivity disorder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#title"/>
+        <IRI>#Paper4</IRI>
+        <Literal>A double-blind, placebo-controlled study of Adderall and methylphenidate in the treatment of attention-deficit/hyperactivity disorder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#PubMed</IRI>
+        <Literal>PubMed comprises more than 30 million citations for biomedical literature from MEDLINE, life science journals, and online books.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#SUNYbuffalo</IRI>
+        <Literal>Department of Psychology, State University of New York at Buffalo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#description"/>
+        <IRI>#UT</IRI>
+        <Literal>Division of Child and Adolescent Psychiatry, University of Texas Health Science Center, San Antonio.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
